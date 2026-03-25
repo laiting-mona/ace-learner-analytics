@@ -1,0 +1,34 @@
+<!-- ============================================================
+  index.html — ACE Learner Analytics Dashboard
+  
+  Full source available in the deployed GAS project.
+  This file is served via HtmlService.createHtmlOutputFromFile('index')
+  and cannot run standalone (requires google.script.run bridge).
+
+  Key sections:
+    1. <head>       — CDN imports (Chart.js, jsPDF, JSZip, html2canvas)
+    2. <style>      — CSS variables + full component styles (~350 lines)
+    3. Login page   — Two-step auth UI (Google account check + password)
+    4. App layout   — Sidebar + main area
+    5. Mode panels  — Three step-based chart configuration panels
+    6. <script>     — All client-side logic (~600 lines):
+                        init(), gasPost(), submitPassword()
+                        switchMode(), renderTimeGrid()
+                        generateM1/M2/M3(), renderCharts(), drawChart()
+                        exportPDF(), exportZIP(), clearCache()
+
+  Dependencies:
+    chart.js              @4.4.0   (cdn.jsdelivr.net)
+    chartjs-plugin-datalabels @2.2.0
+    html2canvas           @1.4.1   (cdnjs.cloudflare.com)
+    jspdf                 @2.5.1   (cdnjs.cloudflare.com)
+    jszip                 @3.10.1  (cdnjs.cloudflare.com)
+    Google Fonts          Noto Sans TC + DM Mono
+
+  Notes:
+    - No fetch() is used. All backend calls use google.script.run.handleRequest().
+    - Session token is stored in a JS variable (not localStorage) to avoid
+      cross-origin storage restrictions in the Google Sites iframe context.
+    - The backend login response bundles timeOptions + labels to prevent
+      race conditions with the freshly-written CacheService token.
+============================================================ -->
