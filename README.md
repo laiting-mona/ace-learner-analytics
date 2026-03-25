@@ -4,7 +4,7 @@
 
 ---
 
-## 📌 Problem Statement
+## Problem Statement
 
 The center collects learner registration data through SurveyCake survey forms. Before this system, generating any statistics required manually filtering a 1,000-row spreadsheet, then copying numbers into PowerPoint — a process that took hours and was prone to human error. Cross-referencing with NTU COOL enrollment data was done entirely by hand.
 
@@ -15,7 +15,7 @@ The center collects learner registration data through SurveyCake survey forms. B
 
 ---
 
-## 🏗️ What I Built
+## What I Built
 
 ### 1. Data Pipeline (Google Sheets + Apps Script)
 
@@ -38,15 +38,15 @@ A single-page application embedded in Google Sites, with a secure backend served
 
 | Mode | Description |
 |------|-------------|
-| 🔍 Progressive Filter | 5-step funnel: scope → identity → classification → rank → college. All selected combinations generate charts simultaneously. |
-| 📊 Multi-line Comparison | Up to 30 custom filter sets plotted as separate lines on the same chart — enables side-by-side trend comparison |
-| 🏛 College Distribution | Bar chart with X-axis fixed at colleges, grouped by identity / rank / appointment type |
+| Progressive Filter | 5-step funnel: scope → identity → classification → rank → college. All selected combinations generate charts simultaneously. |
+| Multi-line Comparison | Up to 30 custom filter sets plotted as separate lines on the same chart — enables side-by-side trend comparison |
+| College Distribution | Bar chart with X-axis fixed at colleges, grouped by identity / rank / appointment type |
 
 **Export options:** PNG bundle (ZIP) and full PDF report with auto-paginated charts and data tables.
 
 ---
 
-## 🔐 Security Architecture (v5.3.0)
+## Security Architecture (v5.3.0)
 
 The system handles university personal data, so security was built in from the start — not bolted on afterward.
 
@@ -71,7 +71,7 @@ User
 
 ---
 
-## 🛠️ Technical Stack
+## Technical Stack
 
 | Layer | Technology |
 |-------|-----------|
@@ -86,7 +86,7 @@ User
 
 ---
 
-## 📊 Data Pipeline Detail
+## Data Pipeline Detail
 
 ### Column Mapping (`_COL_MAP`)
 
@@ -130,7 +130,7 @@ Semester →  "113-1"       → displayed as "113學年第1學期"
 
 ---
 
-## 🔄 API Reference
+## API Reference
 
 The GAS backend uses a single dispatcher pattern. All calls go through `handleRequest(payload)`:
 
@@ -149,7 +149,7 @@ The GAS backend uses a single dispatcher pattern. All calls go through `handleRe
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 ace-learner-analytics/
@@ -181,7 +181,7 @@ ace-learner-analytics/
 
 ---
 
-## ⚙️ Deployment
+## Deployment
 
 This system is deployed on Google Workspace and cannot be run locally. To replicate:
 
@@ -199,11 +199,11 @@ This system is deployed on Google Workspace and cannot be run locally. To replic
 
 ---
 
-## 📈 Impact
+## Impact
 
 | Metric | Before | After |
 |--------|--------|-------|
-| Time to generate a statistics report | ~2 hours (manual) | < 2 minutes |
+| Time to generate a statistics report | 6 to 8 hours (manual) | 10 minutes |
 | Duplicate entries in active dataset | ~75% of raw rows | 0 (automated dedup) |
 | Cross-system verification (SurveyCake vs NTU COOL) | Manual, error-prone | Automated name-matching sheet |
 | Audit trail for data access | None | Full operation log with timestamp |
@@ -211,13 +211,13 @@ This system is deployed on Google Workspace and cannot be run locally. To replic
 
 ---
 
-## 🔒 Privacy & Data Notice
+## Privacy & Data Notice
 
 All data shown in `sample-data/` is **entirely synthetic** — generated to match the schema without containing any real personal information. The actual system handles university personnel data under NTU's data governance policy; no real names, emails, student IDs, or institutional affiliations are included in this repository.
 
 ---
 
-## 🧑‍💻 About This Project
+## About This Project
 
 Built as part of an automation role at NTU's Center for Teaching and Learning Development. The system replaced a fully manual reporting workflow and has been in active use since deployment.
 
