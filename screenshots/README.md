@@ -1,19 +1,18 @@
 # Screenshots
 
-Place the following screenshots in this directory before publishing the repository.
-
-| Filename | Description |
+| Screenshot | Description |
 |----------|-------------|
-| `01_login.png` | Login page showing the two-step auth flow (Google account verification + password) |
-| `02_mode1_filter.png` | Mode 1 (Progressive Filter) — Step 5 showing the 5-level filter panel and a generated chart |
-| `03_mode2_multiline.png` | Mode 2 (Multi-line Comparison) — multiple filter rows and resulting multi-line chart |
-| `04_mode3_college.png` | Mode 3 (College Distribution) — bar chart showing per-college distribution |
-| `05_export_pdf.png` | Sample PDF export output with chart and data table |
-| `06_data_pipeline.png` | Google Sheets overview showing the pipeline: 報名總表 → 去重報名總表 → 彙整 |
+| <img width="1871" height="878" alt="image" src="https://github.com/user-attachments/assets/d6bfbf80-5ee4-424c-af65-ef8d1679f3b8" />
+ | Login page showing the two-step auth flow (Google account verification + password) |
+| <img width="1226" height="707" alt="image" src="https://github.com/user-attachments/assets/f62763d9-a863-4527-84f0-acf54f3acd62" />
+<img width="1257" height="683" alt="image" src="https://github.com/user-attachments/assets/8df9cd03-3240-4cbe-954b-bdbb9d25db79" />
 
-## Screenshot Guidelines
+ | Mode 1 (Progressive Filter) — Step 5 showing the 5-level filter panel and a generated chart |
+| <img width="1225" height="705" alt="image" src="https://github.com/user-attachments/assets/2f6004af-5f45-4c24-8439-8c08d65db710" />
+<img width="952" height="510" alt="image" src="https://github.com/user-attachments/assets/20772aa7-0033-4596-9284-3349aad2e153" />
 
-- Crop to show the relevant UI area; avoid capturing the full browser chrome
-- Use a window width of ~1440px for consistent aspect ratios
-- Mask or remove any real personal data visible in the sheets (blurring column A is sufficient)
-- PNG format, max 2MB per image
+ | Mode 2 (Multi-line Comparison) — multiple filter rows and resulting multi-line chart |
+| <img width="952" height="605" alt="image" src="https://github.com/user-attachments/assets/44204a37-c4b1-424e-82fd-cc44546e75f2" />
+ | Mode 3 (College Distribution) — bar chart showing per-college distribution |
+| <img width="666" height="806" alt="image" src="https://github.com/user-attachments/assets/bb62e78e-06d8-47c1-80db-101f2eb2237e" />
+ | Sample PDF export output with chart and data table |
